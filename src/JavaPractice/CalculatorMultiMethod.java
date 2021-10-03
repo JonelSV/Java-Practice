@@ -32,8 +32,12 @@ public class CalculatorMultiMethod {
 			System.out.println("The qoutient is: " + divide(num1, num2));
 			break;
 		default:
-			System.out.println("INVALID operation, Please try again");
+			System.out.println("INVALID entry, Please try again");
 		}
+		
+		System.out.println("Press N to exit the program");
+		char exit;
+		exit = scan.next().charAt(0);
 		
 		scan.close();
 	}
