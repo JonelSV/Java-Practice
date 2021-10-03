@@ -10,7 +10,13 @@ public class CalculatorMultiMethod {
 		
 		System.out.println("Enter the operation you want to perform( +, -, *, /):");
 		
-		int userInput = scan.nextInt();
+		char operator;
+		operator = scan.next().charAt(0);
+		
+		System.out.println("Enter TWO numbers to be calculated");
+		
+		double num1 = scan.nextDouble();
+		double num2 = scan.nextDouble();
 	}
 	
 	public static double add(double num1, double num2) {
