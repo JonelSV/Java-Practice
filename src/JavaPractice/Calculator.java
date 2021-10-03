@@ -27,7 +27,7 @@ public class Calculator {
 		// switch case for operations
 		// printf = print format, %f = format float (can have 2 decimal places eg. %.2f + %.2f = %.2f  ::::> 10.31 + 10.31 = 20.62 
 		// :::> printf(format type, args can be multiple)
-		
+		// %c ::> character
 		
 		
 		switch (operator) {
@@ -41,8 +41,14 @@ public class Calculator {
 			System.out.printf("%.2f * %.2f = %.2f", numberInput1, numberInput2, (numberInput1 * numberInput2));
 			break;
 		case '/' : 
-			System.out.printf("%.2f / %.2f = %.2f", numberInput1, numberInput2, (numberInput1 / numberInput2));
+			
+			if(numberInput2 != 0)
+				System.out.printf("%.2f / %.2f = %.2f", numberInput1, numberInput2, (numberInput1 / numberInput2));
+			else
+				System.out.println("Please enter a number greater than zero");
 			break;
+		default: 
+			System.out.printf("%c is an invalid operator. Please try again", operator);
 		}
 		
 	}
