@@ -9,14 +9,33 @@ public class CalculatorMultiMethod {
 	
 		
 		System.out.println("Enter the operation you want to perform( +, -, *, /):");
-		
 		char operator;
 		operator = scan.next().charAt(0);
 		
 		System.out.println("Enter TWO numbers to be calculated");
 		
+		
 		double num1 = scan.nextDouble();
 		double num2 = scan.nextDouble();
+		
+		switch(operator) {
+		case '+':
+			System.out.println("The sum is: " + add(num1, num2));
+			break;
+		case '-':
+			System.out.println("The difference is: " + subtract(num1, num2));
+			break;
+		case '*':
+			System.out.println("The product is: " + multiply(num1, num2));
+			break;
+		case '/':
+			System.out.println("The qoutient is: " + divide(num1, num2));
+			break;
+		default:
+			System.out.println("INVALID operation, Please try again");
+		}
+		
+		scan.close();
 	}
 	
 	public static double add(double num1, double num2) {
