@@ -19,8 +19,26 @@ public class Calculator {
 	
 		System.out.println("Enter TWO numbers that the calculation operation will work on");
 		
+		numberInput1 = input.nextDouble();
+		numberInput2 = input.nextDouble();
+			
+		input.close();
 		
-	
+		// switch case for operations
+		// printf = print format, %f = format float (can have 2 decimal places eg. %.2f + %.2f = %.2f  ::::> 10.31 + 10.31 = 20.62 
+		// :::> printf(format type, args can be multiple)
+		
+		
+		
+		switch (operator) {
+		case '+' : 
+			System.out.printf("%.2f + %.2f = %.2f", numberInput1, numberInput2, (numberInput1 + numberInput2));
+			break;
+		}
+		
 	}
+	
+	
+	
 
 }
