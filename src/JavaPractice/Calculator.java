@@ -34,6 +34,15 @@ public class Calculator {
 		case '+' : 
 			System.out.printf("%.2f + %.2f = %.2f", numberInput1, numberInput2, (numberInput1 + numberInput2));
 			break;
+		case '-' : 
+			System.out.printf("%.2f - %.2f = %.2f", numberInput1, numberInput2, (numberInput1 - numberInput2));
+			break;
+		case '*' : 
+			System.out.printf("%.2f * %.2f = %.2f", numberInput1, numberInput2, (numberInput1 * numberInput2));
+			break;
+		case '/' : 
+			System.out.printf("%.2f / %.2f = %.2f", numberInput1, numberInput2, (numberInput1 / numberInput2));
+			break;
 		}
 		
 	}
