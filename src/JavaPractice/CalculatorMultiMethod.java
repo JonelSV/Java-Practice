@@ -35,9 +35,16 @@ public class CalculatorMultiMethod {
 			System.out.println("INVALID entry, Please try again");
 		}
 		
-		System.out.println("Press N to exit the program");
+		System.out.println("Press y to exit the program");
 		char exit;
 		exit = scan.next().charAt(0);
+		
+		if(exit == 'y') {
+		System.exit(0);
+		}else {
+			System.out.println("Invalid Entry, please try again");
+		}
+		
 		
 		scan.close();
 	}
@@ -64,6 +71,7 @@ public class CalculatorMultiMethod {
 		output = num1 / num2;
 		return output;
 	}
+	
 	
 
 }
