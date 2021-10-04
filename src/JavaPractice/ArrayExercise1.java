@@ -1,5 +1,6 @@
 package JavaPractice;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayExercise1 {
@@ -30,7 +31,8 @@ public class ArrayExercise1 {
 	}
 	
 	private static void printArrayOfNumbers(int[] numbers) {
-		System.out.println();
+		System.out.print("The elements in the array are: ");
+		System.out.println(Arrays.toString(numbers));
 		
 	}
 
@@ -41,9 +43,13 @@ public class ArrayExercise1 {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		for(int i = 0; i < numbers.length; i ++);
+		for(int i = 0; i < numbers.length; i ++)
 			numbers[i]  = scan.nextInt();
 		
+		
+		scan.close();
 	}
+	
+	
 
 }
