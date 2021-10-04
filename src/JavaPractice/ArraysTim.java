@@ -39,6 +39,22 @@ public class ArraysTim {
 		}
 		
 		
+		
+		
+		
+		
 	}
+	
+	// creating method to pass array
+	
+	public static void methodArray(int[] methodPassingArray) {
+		
+		for(int i = 0; i < methodPassingArray.length; i++) {
+			System.out
+		}
+	}
+	
+	
+	
 
 }
