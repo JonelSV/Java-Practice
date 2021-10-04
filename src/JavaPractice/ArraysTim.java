@@ -17,6 +17,28 @@ public class ArraysTim {
 		
 		System.out.println(myIntArray[7]);
 		System.out.println(myDoubleArray[3]);
+		
+// to assign more dynamically to arrays, declare int [] array then define valuse and number of elements at the same time.		
+		
+		int[] dynamicAssignedArray = {1,2,3,4,5,6,7,8,9,10};
+		
+		System.out.println(dynamicAssignedArray[0]);
+		System.out.println(dynamicAssignedArray[6]);
+		System.out.println(dynamicAssignedArray[8]);
+		
+// using for loop to dynamically assign values to array
+		
+		int[] loopArray = new int[15];
+		
+		for(int i = 0; i < loopArray.length; i ++) {
+			loopArray[i] = i * 10;
+		}
+		
+		for (int i = 0; i < loopArray.length; i ++) {
+			System.out.println("Element" + i + " , value is " + loopArray[i]);
+		}
+		
+		
 	}
 
 }
