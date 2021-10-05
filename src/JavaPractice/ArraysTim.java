@@ -53,10 +53,15 @@ public class ArraysTim {
 		int[] scanArray = getIntegers(5);
 		
 		// to confirm
+		for (int i = 0; i < scanArray.length; i ++) {
+			System.out.println("Element " + i + " typed value was " + scanArray[i]);
+		}
 		
 		
+		System.out.println("The average of the array from user input is : " + getAverage(scanArray));
 		
-	}
+// ========================below is the end of main line 
+	} 
 	
 	
 	
@@ -72,9 +77,11 @@ public class ArraysTim {
 	// numbers is the number of elements
 	// values is defining new int array that takes in the int from numbers, input by user
 	// values tell the method how many elements the user wants in the array via scanner
+	// \r allows to enter values on the next line
+	
 	
 	public static int[] getIntegers(int number) {
-		System.out.println("Enter " + number + "integer values. \r");
+		System.out.println("Enter " + number + " integer values. \r");
 		int[] values = new int[number];
 		
 		for(int i = 0; i < values.length; i++) {
@@ -84,8 +91,16 @@ public class ArraysTim {
 		return values;
 	}
 	
+	// method to average the array
 	
+	public static double getAverage(int[] array) {
+		int sum = 0;
+				for (int i = 0; i < array.length; i ++) {
+					sum += array[i];
+				}
+		return (double) sum / (double) array.length;
 	
+	}
 	
 	
 
