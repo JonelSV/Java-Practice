@@ -1,9 +1,14 @@
 package JavaPractice;
 
+import java.util.Scanner;
+
 // integer array, 10 is number of elements assigned in the array
 
 
 public class ArraysTim {
+	
+	private static Scanner scanner = new Scanner(System.in);
+	
 
 	public static void main(String[] args) {
 		
@@ -39,20 +44,47 @@ public class ArraysTim {
 		}
 		
 		
+// method array call with loopArrary 15 elements inside it.
+		methodArray(loopArray);
 		
+		
+		
+		
+		int[] scanArray = getIntegers(5);
+		
+		// to confirm
 		
 		
 		
 	}
+	
+	
 	
 	// creating method to pass array
 	
 	public static void methodArray(int[] methodPassingArray) {
 		
 		for(int i = 0; i < methodPassingArray.length; i++) {
-			System.out
+			System.out.println("The i is: " + i + " and the value inside the array is :" + methodPassingArray[i]);
 		}
 	}
+	
+	// numbers is the number of elements
+	// values is defining new int array that takes in the int from numbers, input by user
+	// values tell the method how many elements the user wants in the array via scanner
+	
+	public static int[] getIntegers(int number) {
+		System.out.println("Enter " + number + "integer values. \r");
+		int[] values = new int[number];
+		
+		for(int i = 0; i < values.length; i++) {
+			values[i] = scanner.nextInt();
+			
+		}
+		return values;
+	}
+	
+	
 	
 	
 	
