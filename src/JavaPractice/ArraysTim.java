@@ -60,6 +60,38 @@ public class ArraysTim {
 		
 		System.out.println("The average of the array from user input is : " + getAverage(scanArray));
 		
+		
+// for-each method in an array
+// for each index , String i, print the values in cars array
+		
+		String[] cars = {"tesla", "ford", "mazda", "bmw", "audi"};
+		
+		for(String i : cars) {
+			System.out.println(i);
+		}
+		
+		
+// MULTI-DIMENSIONAL ARRAYS == array of arrays.	
+// to access: create a variable to store new array, then specify FIRST: index of the Array to be accessed, SECOND: index of element to be accessed
+		
+		int [][] myNumbers = {{1,2,3,4}, {5,6,7}};
+		
+		int x = myNumbers[1][2];
+		System.out.println(x);
+		
+		// will output 7 since 1 is the second array then 2 is the index of 7 in that second array.
+		
+		// to print out multi dimensional arrays using for loop.
+		// first is to loop through myNumbers
+		// then
+		int[][] myNumbers2 = {{10,14,12}, {22,33,44}};
+		
+			for(int i = 0; i<myNumbers2.length; i++) {
+				for(int j = 0; j < myNumbers2[i].length; ++j) {
+					System.out.println(myNumbers2[i][j]);
+				}
+			}
+		
 // ========================below is the end of main line 
 	} 
 	
