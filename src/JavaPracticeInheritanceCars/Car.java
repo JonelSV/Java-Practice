@@ -16,5 +16,9 @@ public class Car extends Vehicle {
 		this.isManual = isManual;
 		this.currentGear = currentGear;
 	}
+	
+	public void carUse(String drive, int miles, int speed  ) {
+		System.out.println("try
+	}
 
 }
