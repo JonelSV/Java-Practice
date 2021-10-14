@@ -16,5 +16,9 @@ public class Main {
 	public static int[] getIntegers(int capacity) {
 		int[] array = new int [capacity];
 		System.out.println("Enter " + capacity + " integer valuse : \r");
+		for(int i = 0; i < array.length; i++) {
+			  array[i] = scanner.nextInt();
+		}
+		return array;
 	}
 }
