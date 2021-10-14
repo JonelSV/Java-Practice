@@ -35,6 +35,13 @@ public class Main {
 		for(int i = 0; i < array.length; i++) {{
 			sortedArray[i] = array[i];
 		}
+		
+		boolean flag = true;
+		int temp;
+		while(flag) {
+			flag = false;
+			for(int i=0; i<sortedArray.length)
+		}
 	}
 	
 }
